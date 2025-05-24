@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === Data for Toppings ===
   const toppingsList = [
     { name: "Almonds", class: "custom-btn custom-btn-almonds", imgId: "almondtopping" },
     { name: "M&Ms", class: "custom-btn custom-btn-mms", imgId: "mnmtopping" },
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const toppingsDiv = document.getElementById("toppings");
   const brokenBark = document.getElementById("brokenBark");
 
-  // === Dynamically Create Topping Buttons ===
+  // topping buttons
   toppingsList.forEach((topping, index) => {
     const label = document.createElement("label");
     label.className = topping.class;
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toppingsDiv.appendChild(label);
   });
 
-  // === Utility Functions ===
+  // Utility Functions
   function enableStep(stepId) {
     const step = document.getElementById(stepId);
     if (step) {
@@ -56,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // === Drizzle Selection (Step 2) ===
+  // Drizzle Selection (Step 2)
   document.querySelectorAll('#step2 input[type="checkbox"], #step2 input[type="radio"]').forEach(input => {
     input.addEventListener('change', () => {
       document.querySelectorAll('.drizzle-layer').forEach(img => {
@@ -73,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // === Toppings Selection (Step 3) ===
+  //Toppings Selection (Step 3)
   toppingsDiv.addEventListener('change', (e) => {
     if (e.target && e.target.name === "toppings") {
       const topping = toppingsList.find(t => t.name === e.target.value);
@@ -93,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // === Step 4: Break It Checkbox Logic ===
+  //Step 4: Break It Checkbox Logic
   const breakCheckbox = document.getElementById("bark");
   breakCheckbox.addEventListener("change", () => {
     if (breakCheckbox.checked) {
@@ -105,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // === Submit Form (Final Step) ===
+  // Submit (Final Step)
   document.getElementById("chocoForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
