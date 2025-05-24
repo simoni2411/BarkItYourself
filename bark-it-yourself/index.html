@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bark It Yourself</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body> 
+  <header>
+    <img src="image files/logo.png" alt="Bark It Yourself Logo" id="logo">
+    <h1>Bark It Yourself</h1>
+  </header>
+
+  <main>
+    <form id="chocoForm">
+      <!-- Step 1 -->
+      <div id="step1">
+        <h2>Step 1: Choose Your Chocolate</h2>
+        <div class="choco-buttons">
+          <input type="radio" id="choco-dark" name="chocolate" value="dark" hidden>
+          <label for="choco-dark" class="custom-btn custom-btn-dark">Dark Chocolate</label>
+
+          <input type="radio" id="choco-milk" name="chocolate" value="milk" hidden>
+          <label for="choco-milk" class="custom-btn custom-btn-milk">Milk Chocolate</label>
+
+          <input type="radio" id="choco-white" name="chocolate" value="white" hidden>
+          <label for="choco-white" class="custom-btn custom-btn-white">White Chocolate</label>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div id="step2" style="opacity: 0.5; pointer-events: none;">
+        <h2>Step 2: Add Chocolate Drizzle?</h2>
+        <div class="drizzle-options">
+          <input type="checkbox" id="drizzle-dark" name="drizzle" value="dark" hidden>
+          <label for="drizzle-dark" class="custom-btn custom-btn-dark">Dark Chocolate</label>
+
+          <input type="checkbox" id="drizzle-milk" name="drizzle" value="milk" hidden>
+          <label for="drizzle-milk" class="custom-btn custom-btn-milk">Milk Chocolate</label>
+
+          <input type="checkbox" id="drizzle-white" name="drizzle" value="white" hidden>
+          <label for="drizzle-white" class="custom-btn custom-btn-white">White Chocolate</label>
+
+          <input type="radio" id="drizzle-none" name="drizzle-none" value="none" hidden>
+          <label for="drizzle-none" class="custom-btn custom-btn-none">No Topping</label>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div id="step3" style="opacity: 0.5; pointer-events: none;">
+        <h2>Step 3: Choose Your Toppings</h2>
+        <div id="toppings"></div>
+      </div>
+
+      <!-- Step 4 -->
+      <div id="step4" style="opacity: 0.5; pointer-events: none;">
+        <h2>Step 4: Break Into Bark?</h2>
+        <div class="break-container">
+          <input type="checkbox" name="break" value="broken pieces" id="bark" hidden>
+          <label for="bark" class="custom-btn custom-btn-breakit">Break It!</label>
+        </div>
+      </div>
+      <button type="submit" class="custom-btn custom-btn-conf">Confirm My Bark</button>
+      
+       <div id="choco-canvas">
+
+      <img id="darkChocoImg" src="image files/Darkchoco.png" alt="Dark Chocolate" style="display: none;">
+      <img id="milkChocoImg" src="image files/milkchoco.png" alt="Milk Chocolate" style="display: none;">
+      <img id="whiteChocoImg" src="image files/whitechoco.png" alt="White Chocolate" style="display: none;">
+
+      <img id="drizzleWhite" class="drizzle-layer" src="image files/whitechocodrizzle.png" alt="White Drizzle" style="display:none;">
+      <img id="drizzleMilk" class="drizzle-layer" src="image files/milkchocodrizzle.png" alt="Milk Drizzle" style="display:none;">
+      <img id="drizzleDark" class="drizzle-layer" src="image files/darkchocodrizzle.png" alt="Dark Drizzle" style="display:none;">
+
+     
+
+      <img id="salttopping" src="image files/salttop.png" alt="Flaky Sea Salt" style="display: none;">
+      <img id="mnmtopping" src="image files/mmtop.png" alt="Mini M&Ms" style="display: none;">
+      <img id="balltopping" src="image files/sprinkletop.png" alt="M&Ms" style="display: none;">
+      <img id="strawberries" src="image files/strawtop.png" alt="Freeze Dried Strawberries" style="display: none;">
+      <img id="almondtopping" src="image files/almondtop.png" alt="Almonds" style="display: none;">
+
+      <img id="brokenBark" src="image files/broken.png" alt="Broken Bark" style="display: none;">
+
+      </div>
+
+
+</div>
+
+
+     
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

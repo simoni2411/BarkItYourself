@@ -1,0 +1,265 @@
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff6ea;
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px;
+}
+
+#toppings label {
+  display: inline-block;
+  margin: 5px;
+}
+header {
+  display: flex;               
+  align-items: center;         
+  gap: 10px;                   
+  padding: 10px;
+  color: #aa1945;
+}
+
+#logo {
+  width: 100px;                
+  height: 100px;
+}
+
+#step1 {
+  text-align: center; 
+}
+
+#step1 .choco-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; 
+  margin-top: 10px; 
+}
+
+
+.custom-btn-dark {
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Dark\ Chocolate.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;       
+  cursor: pointer;
+  font-size: 0;            
+  padding: 0;
+}
+.custom-btn-milk {
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Milk\ Chocolate.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;        
+  cursor: pointer;
+  font-size: 0;             
+  padding: 0;
+}
+.custom-btn-white{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/White\ Chocolate.png') no-repeat center center;
+  background-size: contain;  
+  border: none;
+  color: transparent;       
+  cursor: pointer;
+  font-size: 0;            
+  padding: 0;
+}
+.custom-btn-none{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/None.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;        
+  cursor: pointer;
+  font-size: 0;             
+  padding: 0;
+}
+.drizzle-options {
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+.custom-btn-almonds{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Almonds.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;       
+  cursor: pointer;
+  font-size: 0;            
+  padding: 0;
+}
+.custom-btn-strawberry{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Strawberries.png') no-repeat center center;
+  background-size: contain;  
+  border: none;
+  color: transparent;      
+  cursor: pointer;
+  font-size: 0;             
+  padding: 0;
+}
+.custom-btn-salt{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Salt.png') no-repeat center center;
+  background-size: contain;  
+  border: none;
+  color: transparent;     
+  cursor: pointer;
+  font-size: 0;              
+  padding: 0;
+}
+.custom-btn-mms{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/mms.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;      
+  cursor: pointer;
+  font-size: 0;              
+  padding: 0;
+}
+.custom-btn-ball{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Ball\ Sprinkles.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;        
+  cursor: pointer;
+  font-size: 0;              
+  padding: 0;
+}
+.break-container {
+  justify-content: center;
+  display: flex;
+  margin: 20px 0;
+}
+
+.custom-btn-breakit{
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Breakit.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;       
+  cursor: pointer;
+  font-size: 0;              
+  padding: 0;
+}
+
+
+
+#choco-preview img {
+  width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+#darkChocoImg,
+#milkChocoImg,
+#whiteChocoImg {
+  width: 100%; 
+  height: auto; 
+  margin: auto;
+  display: block;
+}
+#choco-canvas {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  height: 30px auto;
+}
+#choco-canvas {
+  margin-top: 10px; 
+  position: relative;
+}
+
+
+#choco-canvas img {
+  position:absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.drizzle-layer {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 10%;          
+  height: auto;
+  z-index: 2;           
+  pointer-events: none; 
+}
+.topping-layer {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 85%;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+#strawberries {
+  position: absolute !important;
+  top: 100% !important;    
+  left: 0 !important;
+  width: 86% !important;
+  pointer-events: none !important;
+  z-index: 3 !important;
+}
+
+.custom-btn-conf{
+  position: relative;
+  width: 200px;          
+  height: 60px;          
+  background: url('image\ files/Confirm.png') no-repeat center center;
+  background-size: contain;   
+  border: none;
+  color: transparent;        
+  cursor: pointer;
+  font-size: 0;              
+  padding: 1000;
+}
+.custom-btn {
+  transition: filter 0.3s ease;
+}
+.custom-btn:hover {
+  filter: brightness(0.7);
+}
+#brokenBark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1.3);
+  max-width: 100%;
+  height: auto;
+  z-index: 4;
+}
+
+
